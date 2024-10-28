@@ -1,0 +1,20 @@
+.blocolista{
+    display:flex;
+
+    flex-wrap: wrap;
+    color:MediumVioletRed;
+}
+.h1{
+    color:MediumVioletRed;
+    text-align: center;
+}
+.h2{
+
+}
+.preço{
+    color:rgb(30, 30, 204)
+}
+.car{
+    display: flex;
+    border-radius: 20%;
+}
