@@ -8,8 +8,12 @@ export default function Lista({ lista }) {
                 {lista.map(produto => (
                     <li className={styles.card} key={produto.id}>
                         <h2 className={styles.h2}>{produto.title}</h2>
-                        <p className={styles.preço}>Preço: R${produto.price}</p>
                         <img src={produto.image} alt={produto.title} width={100} />
+                        <p className={styles.h2}>{produto.description}</p>
+                        <p className={styles.preço}>Preço: R${produto.price}</p>
+                        <p className={styles.h2}>{produto.category}</p>
+                        <p className={styles.h2}>{produto.rating.rate}</p>
+                        <p className={styles.h2}>{produto.rating.count}</p>
                     </li>
                 ))}
             </ul>
