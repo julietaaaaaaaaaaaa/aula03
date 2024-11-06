@@ -1,6 +1,11 @@
 import styles from '../styles/listaProdutos.module.css'
+import Loading from './Loading';
 
 export default function Lista({ lista }) {
+
+    if(lista.length === 0){
+return <Loading/>
+    }
     return (
         <div >
             <h1 className={styles.h1}>Lista de produtos</h1>

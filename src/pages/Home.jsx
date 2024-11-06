@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import ListarProdutos from '../components/ListarProdutos';
+import Loading from "../components/Loading";
+
 export default function Home(){
 
     const [listaHome, setLista] = useState([]);
