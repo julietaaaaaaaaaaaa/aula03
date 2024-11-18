@@ -20,8 +20,21 @@ export default function Home(){
         };
         ReceberListaProdutos();
     }, []);
+
+    const orderAZ = () => {
+    const listaAux = [...lista].sort((a, b)=> a.title.localeCompare(b.title));
+    setLista(listaAux);
+}
+    const orderZA = () => {
+    const listaAux = [...lista].sort((a, b)=> a.title.localeCompare(b.title));
+    setLista(listaAux);
+}
     return (
         <>
+        <h1>Lista de produtos</h1>
+        <button onClick={()=>orderAZ()}>Az</button>
+        <button on onClick={()=>orderZA}>Za</button>
+
         <ListarProdutos lista ={listaHome}/>
         </>
     )
